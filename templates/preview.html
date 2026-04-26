@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 
 <meta charset="UTF-8">
-<title>Your App</title>
+<title>App</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#000000">
 
 <link rel="manifest" href="/static/manifest.json">
 
@@ -18,13 +17,15 @@ if ('serviceWorker' in navigator) {
 
 <style>
 body {
-  background:#111;
-  color:white;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  margin:0;
+  background:black;
+  overflow:hidden;
+}
+
+iframe {
+  width:100vw;
   height:100vh;
-  flex-direction:column;
+  border:none;
 }
 </style>
 
@@ -32,8 +33,7 @@ body {
 
 <body>
 
-<h1>Your App is Ready 🚀</h1>
-<p>Tap "Add to Home Screen"</p>
+<iframe src="{{ url }}"></iframe>
 
 </body>
 </html>
